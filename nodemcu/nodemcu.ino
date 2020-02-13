@@ -22,7 +22,7 @@
 //Started SoftwareSerial at RX and TX pin of ESP8266/NodeMCU
 
 int data;
-const char* URL = "http://192.168.178.141:8080/device/sendData";
+const char* URL = "http://159.65.236.97/api/device/sendData";
 const char* ssid = "Test";
 const char* password = "12345678";
  
@@ -52,7 +52,7 @@ void loop() {
     
     http.begin(URL);  //Specify request destination
     http.addHeader("Content-Type", "application/x-www-form-urlencoded"); 
-    int httpCode = http.POST(String("count=" + String(data))); //Send the request
+    int httpCode = http.POST(String("deviceId=" + String(1) + "&count=" + String(data))); //Send the request
  
     if (httpCode > 0) { //Check the returning code
       String payload = http.getString();   //Get the request response payload

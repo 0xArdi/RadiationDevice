@@ -37,5 +37,5 @@ const char* password = "12345678";
 ```
 To change the server to which the data is send to alter the following variable.
 ``` C
-const char* URL = "http://192.168.178.141:8080/device/sendData";
+const char* URL = "http://skopje.ml/device/sendData?deviceSecret=YOUR_DEVICE_SECRET";
 ```

@@ -22,7 +22,7 @@
 //Started SoftwareSerial at RX and TX pin of ESP8266/NodeMCU
 
 int data;
-const char* URL = "http://skopje.ml/api/device/sendData?deviceSecret="YOUR_DEVICE_SECRET";
+const char* URL = "http://skopje.ml/api/device/sendData?deviceSecret=YOUR_DEVICE_SECRET";
 const char* ssid = "Test";
 const char* password = "12345678";
  

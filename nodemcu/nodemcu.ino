@@ -52,7 +52,7 @@ void loop() {
     
     http.begin(URL);  //Specify request destination
     http.addHeader("Content-Type", "application/x-www-form-urlencoded"); 
-    int httpCode = http.POST(String("count=" + String(data))); //Send the request
+    int httpCode = http.POST(String("measurement=" + String(data))); //Send the request
  
     if (httpCode > 0) { //Check the returning code
       String payload = http.getString();   //Get the request response payload
